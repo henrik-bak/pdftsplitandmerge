@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="573.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.pdfsplitandmerge.controller.MergeTabController">
+  <children>
+    <TableView id="splitTable" fx:id="mergeTable" layoutX="27.0" layoutY="18.0" prefHeight="98.0" prefWidth="476.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="35.0" text="#" fx:id="numberColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="142.0" text="File name" fx:id="nameColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="258.0" text="Path" fx:id="pathColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="39.0" text="Pages" fx:id="pagesColumn" />
+      </columns>
+    </TableView>
+    <Button id="addFileSplitBtn" fx:id="addBtn" layoutX="517.0" layoutY="18.0" mnemonicParsing="false" onAction="#addBtnClick" prefHeight="30.0" prefWidth="30.0" text="+" />
+    <Button id="removeFileSplitBtn" fx:id="removeBtn" layoutX="517.0" layoutY="48.0" mnemonicParsing="false" onAction="#removeBtnClick" prefHeight="30.0" prefWidth="30.0" text="-" />
+    <Button fx:id="upBtn" layoutX="515.0" layoutY="78.0" mnemonicParsing="false" onAction="#upBtnClick" text="Up" />
+    <Button fx:id="downBtn" layoutX="507.0" layoutY="99.0" mnemonicParsing="false" onAction="#downBtnClick" text="Down" />
+    <TitledPane animated="false" layoutX="27.0" layoutY="157.0" prefHeight="179.0" prefWidth="476.0" text="Output file options">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="472.0">
+          <children>
+            <Button fx:id="selectBtn" layoutX="391.0" layoutY="66.0" mnemonicParsing="false" onAction="#selectBtnClick" text="Select" />
+            <Label layoutX="14.0" layoutY="25.0" text="Output file name" />
+            <TextArea id="fileNameTextArea" fx:id="directoryNameTextArea" layoutX="113.0" layoutY="62.0" prefHeight="30.0" prefWidth="267.0" wrapText="true" />
+            <CheckBox fx:id="overwriteCheckBox" layoutX="14.0" layoutY="116.0" mnemonicParsing="false" text="Overwrite if exists" />
+            <Label layoutX="14.0" layoutY="69.0" text="Output directory" />
+            <TextArea fx:id="fileNameTextArea" layoutX="113.0" layoutY="18.0" prefHeight="30.0" prefWidth="267.0" wrapText="true" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Button fx:id="mergeBtn" layoutX="241.0" layoutY="401.0" mnemonicParsing="false" onAction="#mergeBtnClick" text="Merge PDF's!" />
+  </children>
+</AnchorPane>

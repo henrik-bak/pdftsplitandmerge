@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.pdfsplitandmerge.main.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.pdfsplitandmerge.controller.MainWindowController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <TabPane layoutX="14.0" layoutY="14.0" prefHeight="472.0" prefWidth="572.0000999999975" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Split">
+          <VBox>
+            <children>
+              <fx:include source="SplitTab.fxml" />
+            </children>
+          </VBox>
+        </Tab>
+        <Tab text="Merge">
+          <VBox>
+            <children>
+              <fx:include source="MergeTab.fxml" />
+            </children>
+          </VBox>
+        </Tab>
+        <Tab text="Convert to image">
+          <VBox>
+            <children>
+              <fx:include source="ImageConverterTab.fxml" />
+            </children>
+          </VBox>
+        </Tab>
+        <Tab text="About">
+          <VBox>
+            <children>
+              <fx:include source="AboutTab.fxml" />
+            </children>
+          </VBox>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

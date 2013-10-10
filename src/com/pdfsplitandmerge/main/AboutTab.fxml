@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="573.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.pdfsplitandmerge.controller.AboutTabController">
+  <children>
+    <Label layoutX="50.0" layoutY="140.0" text="Author:">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="158.0" layoutY="144.0" text="Henrik Bak" />
+    <Label font="$x1" layoutX="50.0" layoutY="189.0" text="Website:" />
+    <Hyperlink font="$x1" layoutX="158.0" layoutY="183.0" text="www.samplesite.com" />
+    <Label layoutX="50.0" layoutY="287.0" text="Build version:" />
+    <Label layoutX="50.0" layoutY="340.0" text="Build date:" />
+    <Label font="$x1" layoutX="158.0" layoutY="290.0" text="1.0" />
+    <Label font="$x1" layoutX="158.0" layoutY="337.0" text="10/9/2013" />
+  </children>
+</AnchorPane>
